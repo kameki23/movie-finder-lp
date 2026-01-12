@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie & TV Finder | どの配信で観れるか、もう迷わない。</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container flex justify-between items-center">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-teal">
+                    <path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="currentColor"
+                        stroke-width="2" />
+                    <path d="M10 10l5 3.5-5 3.5V10z" fill="currentColor" />
+                </svg>
+                <span>Finder</span>
+            </div>
+            <a href="#download" class="btn-primary-sm">App Store</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero relative">
+            <div class="glow-bg"></div>
+            <div class="container relative z-10 grid-hero">
+                <div class="hero-content reveal-left">
+                    <div class="badge-new">New Release 2026</div>
+                    <h1>
+                        どの配信で観れるか、<br>
+                        <span class="text-gradient">もう迷わない。</span>
+                    </h1>
+                    <p class="hero-sub">
+                        Netflix / Prime / Disney+ / U-NEXT…<br>
+                        全部まとめて一発検索。<br>
+                        あなたの「映画タイム」を、探す時間から解放します。
+                    </p>
+                    <a href="#download" class="btn-app-store">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path
+                                d="M18.71 19.5c-.314 1.157-1.337 2.558-2.703 2.558-.9 0-1.841-.56-2.766-.56-1.57 0-2.092.67-3.778.56C8.567 21.84 6.77 18.25 6.77 14.73c0-3.35 1.76-5.06 4.35-5.06 1.49 0 2.22.61 2.9.61.64 0 1.87-.67 3.12-.67 1.25 0 2.15.53 2.85 1.26-2.58 1.57-2.18 5.7.53 6.94l-1.81 1.69zM13 5.43c.6-1.28.3-3.15-.9-4.2C10.74-.03 9.49.25 8.78 1.39c-.56 1.07.03 2.92 1.34 3.78.81.56 2.09.95 2.88.26z" />
+                        </svg>
+                        App Storeから入手
+                    </a>
+                </div>
+                <div class="hero-visual reveal-zoom">
+                    <!-- Perspective Mockup -->
+                    <div class="phone-mockup">
+                        <img src="./images/ui_home.png" alt="Search UI Screenshot">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem / Psychology Section -->
+        <section class="problem-section container text-center reveal-up">
+            <h2 class="section-title">
+                「作品は決まった。<br>
+                でも、<span class="text-orange">どこで配信してる？</span>」
+            </h2>
+            <div class="problem-cards flex justify-center gap-4 wrap">
+                <div class="p-card">
+                    <span class="emoji">😩</span>
+                    <p>アプリを一つひとつ開いて検索…</p>
+                </div>
+                <div class="p-card">
+                    <span class="emoji">💔</span>
+                    <p>レンタルだと思って諦めたら、実は見放題だった…</p>
+                </div>
+                <div class="p-card">
+                    <span class="emoji">⏳</span>
+                    <p>探している間に20分経過…</p>
+                </div>
+            </div>
+            <div class="arrow-down">↓</div>
+            <p class="solution-text">
+                Movie & TV Finderなら、<br>
+                <strong class="text-teal">タイトルを入れるだけ。3秒で解決。</strong>
+            </p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features container">
+
+            <!-- Feature 1: Search -->
+            <div class="feature-row reverse reveal-left">
+                <div class="feature-text">
+                    <div class="feature-icon">🔍</div>
+                    <h3>全配信サイトを横断検索</h3>
+                    <p>主要な配信サービス（Netflix, Amazon Prime, Disney+, U-NEXT, Huluなど）を網羅。見たい作品が「今」どこで観れるか、一目で分かります。</p>
+                </div>
+                <div class="feature-img-box">
+                    <img src="./images/ui_home.png" class="f-img shadow-lg" alt="Cross-platform search">
+                </div>
+            </div>
+
+            <!-- Feature 2: History & Favorites -->
+            <div class="feature-row reveal-right">
+                <div class="feature-text">
+                    <div class="feature-icon">🔖</div>
+                    <h3>「あとで観よう」を逃さない</h3>
+                    <p>気になった作品はワンタップでお気に入りへ。「あれ、なんだっけ？」が無くなります。</p>
+                </div>
+                <div class="feature-img-box stack-images">
+                    <img src="./images/ui_favorites.png" class="f-img shadow-lg" alt="Favorites">
+                    <img src="./images/ui_history.png" class="f-img secondary shadow-lg" alt="History">
+                </div>
+            </div>
+
+            <!-- Feature 3: Random -->
+            <div class="feature-row reverse reveal-left">
+                <div class="feature-text">
+                    <div class="feature-icon">🎲</div>
+                    <h3>運命の作品に出会う</h3>
+                    <p>何を観るか決まらない夜は、ランダム機能にお任せ。予想外の名作が、あなたを待っています。</p>
+                </div>
+                <div class="feature-img-box">
+                    <img src="./images/ui_random.png" class="f-img shadow-lg" alt="Random Pick">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Premium Section -->
+        <section class="premium-section angle-bg reveal-up">
+            <div class="container text-center">
+                <h2>Upgrade to <span class="text-gold">Premium</span></h2>
+                <p class="premium-sub">映画体験を、ファーストクラスへ。</p>
+
+                <div class="pricing-card">
+                    <div class="plan-badge">Most Popular</div>
+                    <h3>Yearly Plan</h3>
+                    <div class="price">¥2,900<span class="period">/ 年</span></div>
+                    <p class="save-tag">2ヶ月分お得</p>
+
+                    <ul class="benefit-list">
+                        <li>✅ お気に入り登録 <span class="highlight">無制限</span></li>
+                        <li>✅ 高度な検索フィルター（年代・評価）</li>
+                        <li>✅ 広告完全非表示</li>
+                        <li>✅ ファミリー共有対応</li>
+                    </ul>
+
+                    <a href="#download" class="btn-premium">3日間 無料トライアルを開始</a>
+                    <p class="note">いつでも解約可能です</p>
+                </div>
+
+                <div class="ui-preview-premium mt-8">
+                    <img src="./images/ui_settings.png" alt="Premium Settings UI" class="shadow-2xl border-gold">
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="container faq-section reveal-up">
+            <h2 class="text-center mb-8">よくある質問</h2>
+            <div class="faq-grid">
+                <details>
+                    <summary>無料で使えますか？</summary>
+                    <p>はい、基本的な検索機能と作品情報の閲覧は完全に無料でご利用いただけます。</p>
+                </details>
+                <details>
+                    <summary>どの配信サービスに対応していますか？</summary>
+                    <p>Netflix, Amazon Prime Video, Disney+, Hulu, U-NEXT, Leminoなど、日本国内の主要なサービスに対応しています。</p>
+                </details>
+                <details>
+                    <summary>アプリ内で映画を再生できますか？</summary>
+                    <p>いいえ、再生は各配信サービスのアプリで行われます。当アプリは「どこで観れるか」を探すための検索エンジンです。</p>
+                </details>
+                <details>
+                    <summary>お気に入りの数に制限はありますか？</summary>
+                    <p>無料版では制限がありますが、Premiumプランでは無制限に登録可能です。</p>
+                </details>
+                <details>
+                    <summary>サブスクリプションの解約方法は？</summary>
+                    <p>iOSの設定アプリ > Apple ID > サブスクリプション からいつでも簡単に解約できます。</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="cta-final text-center" id="download">
+            <div class="glow-spot"></div>
+            <div class="container relative z-10">
+                <h2>今夜観る作品、<br>3秒で決めよう。</h2>
+                <a href="#" class="btn-app-store large mt-8">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                        <path
+                            d="M18.71 19.5c-.314 1.157-1.337 2.558-2.703 2.558-.9 0-1.841-.56-2.766-.56-1.57 0-2.092.67-3.778.56C8.567 21.84 6.77 18.25 6.77 14.73c0-3.35 1.76-5.06 4.35-5.06 1.49 0 2.22.61 2.9.61.64 0 1.87-.67 3.12-.67 1.25 0 2.15.53 2.85 1.26-2.58 1.57-2.18 5.7.53 6.94l-1.81 1.69zM13 5.43c.6-1.28.3-3.15-.9-4.2C10.74-.03 9.49.25 8.78 1.39c-.56 1.07.03 2.92 1.34 3.78.81.56 2.09.95 2.88.26z" />
+                    </svg>
+                    <div>
+                        <span class="sub">Download on the</span>
+                        <span class="main">App Store</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <div class="footer-links">
+                <a href="https://example.com/contact">お問い合わせ</a>
+                <a href="https://example.com/privacy">プライバシーポリシー</a>
+                <a href="https://example.com/terms">利用規約</a>
+            </div>
+            <p class="copyright">&copy; 2026 Movie & TV Finder. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
