@@ -188,9 +188,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const premiumImg = document.getElementById('premium-ui-img');
         if (premiumImg) {
             if (lang === 'ja') {
-                premiumImg.src = './images/ui_settings_ja.png';
+                premiumImg.src = './images/ui_settings_ja.png?v=2';
             } else {
-                premiumImg.src = './images/ui_settings_en.png';
+                premiumImg.src = './images/ui_settings_en.png?v=2';
             }
         }
 
