@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Movie & TV Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--glass-border);
+            margin-bottom: 3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+        }
+
+        .back-link svg {
+            margin-right: 0.5rem;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .contact-card {
+            background: var(--surface);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-top: 2rem;
+        }
+
+        .contact-email {
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: bold;
+            display: block;
+            margin: 1.5rem 0;
+            text-decoration: none;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="page-header">
+            <a href="index.html" class="back-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Home
+            </a>
+        </header>
+
+        <div class="contact-content">
+            <h1>Contact Us</h1>
+            <p class="text-muted">Have a question or feedback? We'd love to hear from you.</p>
+
+            <div class="contact-card">
+                <p>Please email us at:</p>
+                <a href="mailto:support@turtlefit.jp" class="contact-email">support@turtlefit.jp</a>
+                <p class="text-muted" style="font-size: 0.9rem;">We usually respond within 24-48 hours.</p>
+            </div>
+        </div>
+
+        <footer style="margin-top: 5rem; padding-bottom: 2rem; text-align: center; color: var(--text-muted);">
+            &copy; 2026 Movie & TV Finder
+        </footer>
+    </div>
+
+</body>
+
+</html>
