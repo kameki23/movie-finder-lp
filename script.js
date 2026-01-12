@@ -12,6 +12,8 @@ const translations = {
         feature_history_desc: "Add to favorites with one tap. No more 'What was that movie?' moments.",
         feature_random_title: "Meet your Destiny",
         feature_random_desc: "Can't decide? Let the Random Picker decide your night's fate.",
+        feature_lang_title: "Use in Your Language",
+        feature_lang_desc: "Fully localized for your convenience. Switch languages instantly from the settings.",
         prob_title: "Movie night decided.<br><span class=\"text-orange\">But where to watch?</span>",
         prob_1: "Opening apps one by one...",
         prob_2: "Thought it was rental, actually free...",
